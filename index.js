@@ -1,3 +1,11 @@
+var tom1 = new Audio("sounds/tom-1.mp3");
+var tom2 = new Audio("sounds/tom-2.mp3");
+var tom3 = new Audio("sounds/tom-3.mp3");
+var tom4 = new Audio("sounds/tom-4.mp3");
+var snare = new Audio("sounds/snare.mp3");
+var kickBass = new Audio("sounds/kick-bass.mp3");
+var crash = new Audio("sounds/crash.mp3");
+
 for (i = 0; i < document.querySelectorAll(".drum").length; i++) {
     document.querySelectorAll("button")[i].addEventListener("click", function () {
         playSound(this.innerHTML);
@@ -12,31 +20,31 @@ function playSound(key) {
     buttonAnimation(key);
     switch (key) {
         case "w":
-            new Audio("sounds/tom-1.mp3").play();
+            tom1.play();
             break;
 
         case "a":
-            new Audio("sounds/tom-2.mp3").play();
+            tom2.play();
             break;
 
         case "s":
-            new Audio("sounds/tom-3.mp3").play();
+            tom3.play();
             break;
 
         case "d":
-            new Audio("sounds/tom-4.mp3").play();
+            tom4.play();
             break;
 
         case "j":
-            new Audio("sounds/snare.mp3").play();
+            snare.play();
             break;
 
         case "k":
-            new Audio("sounds/kick-bass.mp3").play();
+            kickBass.play();
             break;
 
         case "l":
-            new Audio("sounds/crash.mp3").play();
+            crash.play();
             break;
 
         default:
