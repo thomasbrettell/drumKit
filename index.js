@@ -62,7 +62,3 @@ function HouseKeeper(name, age, skills, languages) {
         alert("Cleaning in progress...")
     }
 }
-
-var houseKeeper1 = new HouseKeeper("Matilda", 37, "Cleaning", ["French", "English"]);
-
-// console.log(houseKeeper1);
