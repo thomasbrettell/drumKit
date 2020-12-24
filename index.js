@@ -60,13 +60,3 @@ function buttonAnimation(currentKey) {
     }, 100);
 
 }
-
-function HouseKeeper(name, age, skills, languages) {
-    this.name = name;
-    this.age = age;
-    this.skills = skills;
-    this.languages = languages;
-    this.clean = function () {
-        alert("Cleaning in progress...")
-    }
-}
